@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Compra</title>
+	<link rel="stylesheet" type="text/css" href="css/reticula.css">
+	<link rel="stylesheet" type="text/css" href="css/pagina.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+</head>
+<body>
+	<div id="pagina"><!--Inicio de página-->
+		<header><!--Inicio de cabecera-->
+			<img src="images/header.png">
+		</header><!--Cierre de cabecera-->
+		<nav id="menu"><!--Inicio de menú-->
+			<ul>
+				<li><a href="https://www.onelittlespark.com.mx/tareas/ejer06/inicio">Inicio</a></li>
+				<li><a href="#">Comprar</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav><!--Cierre de menú-->
+		<section id="contenidos"><!--Inicio de contenidos-->
+			<h1>Realiza tu compra</h1>
+				<form name="compra" method="POST">
+					<ul>
+					<li>Nombre: <input type="text" name="nombre" maxlength="20" placeholder="Pon tu nombre"></li>
+					<li>Apellidos: <input type="text" name="apellidos"></li>
+					<li>Teléfono: <input type="tel" name="cel"></li>
+					<li>Correo: <input type="email" name="correo" required></li>
+					<li>Domicilio: <input type="address" name="domicilio" required></li>
+					<li>Selecciona el articulo que deseas comprar</li>
+				<select name="articulo">
+					<option value="cd1">Azul</option>
+					<option value="cd2">Azul</option>
+					<option value="cd3">Azul</option>
+					<option value="cd4">Azul</option>
+					<option value="cd5">Azul</option>
+					<option value="cd6">Azul</option>
+					<option value="cd7">Azul</option>
+					<option value="cd8">Azul</option>
+					<option value="cd9">Azul</option>
+					<option value="cd10">Azul</option>
+					<option value="dvd1">Blanco</option>
+					<option value="dvd2">Blanco</option>
+					<option value="dvd3">Blanco</option>
+					<option value="dvd4">Blanco</option>
+					<option value="dvd5">Blanco</option>
+					<option value="dvd6">Blanco</option>
+					<option value="dvd7">Blanco</option>
+					<option value="dvd8">Blanco</option>
+					<option value="dvd9">Blanco</option>
+					<option value="dvd10">Blanco</option>
+					<option value="ps1">Negro</option>
+					<option value="ps2">Negro</option>
+					<option value="ps3">Negro</option>
+					<option value="ps4">Negro</option>
+					<option value="ps5">Negro</option>
+					<option value="ps6">Negro</option>
+					<option value="ps7">Negro</option>
+					<option value="ps8">Negro</option>
+					<option value="ps9">Negro</option>
+					<option value="ps10">Negro</option>
+				</select>
+			<li><input type="submit" name="Enviar"></li>
+			</ul>
+			<footer class="col12"><!--Inicio de pie-->
+			<img src="images/footer.png">
+		</footer><!--Cierre de pie-->
+	</div><!--Cierre de página-->
+<script src="js/lightbox.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

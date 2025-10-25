@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FORMULARIOS</title>
+</head>
+<body>
+<h1>Formularios</h1>
+<form name="compra"> 
+	<ul>
+	<li> Nombre: <input type="text" name="nombre" maxlength="20" placeholder="Coloca tu nombre aquí :)"required></li>
+	<li>Apellidos: <input type="text" name="apellidos" maxlength="30" placeholder="Coloca aquí tus apellidos ;)"required></li>
+	<li>E-mail: <input type="text" name="e-mail" placeholder="Coloca aquí tu e-mail"required></li>
+
+	<li>Hobbies</li>
+	<li>Journaling <input type="checkbox" name="Hobbies" value="journaling"></li>
+	<li>Música <input type="checkbox" name="Hobbies" value="Música"></li>
+	<li>deportes <input type="checkbox" name="Hobbies" value="deportes"></li>
+
+	<li>Opinion sobre algo jaja</li>
+	<li>Me gusta <input type="radio" name="opinión" value="Me gusta"></li>
+	<li>No me gusta <input type="radio" name="opinión" value="No me gusta"></li>
+
+	<li>Comentarios</li>
+	<li> <textarea name="comentarios" maxlength="240"></textarea> </li>
+	<li> <input type="file" name="adjunto"> </li>
+	<li>Cantidad <input type="number" name="cantidad" min="1" max="5"></li>
+
+	<li>Sistema operativo</li>
+	<li>
+		<select name="OS">
+			<option value="Seleccionar">Seleccionar</option>
+			<option value="windows">Windows</option>
+			<option value="macos">MacOs</option>
+			<option value="linux">Linux</option>
+		</select>
+	</li>
+
+	<li><input type="reset" name="borrar" value="Borrar"> </li>
+	<li><input type="submit" name="enviar" value="Enviar"> </li>
+</ul>
+</form>
+</body>
+</html>
