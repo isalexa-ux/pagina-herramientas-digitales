@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parque de Vida Salvaje — Zoológico Contemporáneo</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- // editable: revisa styles.css para cambiar colores y tipografías -->
+</head>
+<body>
+
+  <!-- Header / Menú principal (CSS-only) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero">Parque Vida Salvaje</a>
+
+      <!-- CSS-only mobile menu: checkbox hack -->
+      <input id="nav-toggle" type="checkbox" class="nav-toggle"> <!-- // editable: cambia el id si es necesario -->
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#mammals">Mamíferos</a></li>
+          <li><a href="#birds">Aves</a></li>
+          <li><a href="#reptiles">Reptiles</a></li>
+          <li><a href="#habitats">Hábitats</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#education">Educación</a></li>
+          <li><a href="#events">Eventos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Índice de contenidos -->
+  <nav class="toc">
+    <div class="container">
+      <strong>Índice:</strong>
+      <a href="#hero">Inicio</a> |
+      <a href="#about">Sobre</a> |
+      <a href="#mammals">Mamíferos</a> |
+      <a href="#birds">Aves</a> |
+      <a href="#reptiles">Reptiles</a> |
+      <a href="#habitats">Hábitats</a> |
+      <a href="#gallery">Galería</a> |
+      <a href="#education">Educación</a> |
+      <a href="#events">Eventos</a> |
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- 1) Inicio / Hero -->
+  <section id="hero" class="hero">
+    <!-- // reemplazar imagen por una propia si hace falta -->
+    <div class="hero-media">
+  <img src="images/lion_male_6y.jpg" alt="León en su hábitat"> <!-- // ahora sirve localmente: images/lion_male_6y.jpg -->
+    </div>
+    <div class="container hero-content">
+      <h1>Bienvenido al Parque de Vida Salvaje</h1>
+      <p class="lead">Conservación, educación y experiencias inmersivas para conectar con la naturaleza.</p>
+      <a class="btn" href="#about">Conoce más</a>
+    </div>
+  </section>
+
+  <!-- 2) Sobre el Zoológico -->
+  <section id="about" class="section about container">
+    <h2>Sobre el Zoológico</h2>
+    <p><strong>Misión:</strong> Proteger especies, educar a la comunidad y promover la investigación para conservar la biodiversidad.</p>
+    <p><strong>Historia:</strong> Fundado en 2005, el Parque Vida Salvaje se transformó en una reserva moderna enfocada en la conservación en 2015. Contamos con programas de reproducción y reasentamiento.</p>
+    <div class="about-grid">
+      <div class="card">
+  <img src="images/elephant_african_2.jpg" alt="Elefante - conservación"> <!-- // ahora sirve localmente: images/elephant_african_2.jpg -->
+        <h3>Programas de conservación</h3>
+        <p>Trabajamos con organizaciones internacionales para proteger especies en peligro.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/800x600/?research,scientist&sig=3" alt="Investigación"> <!-- // editable -->
+        <h3>Investigación</h3>
+        <p>Publicamos estudios sobre comportamiento animal y restauración de hábitats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Mamíferos Salvajes -->
+  <section id="mammals" class="section mammals container">
+    <h2>Mamíferos Salvajes</h2>
+    <p>Fichas breves de algunos de nuestros mamíferos emblemáticos.</p>
+    <div class="grid mammals-grid">
+      <!-- Repeat card pattern, se pueden añadir más animales -->
+      <article class="animal-card">
+  <img src="images/lion_male_6y.jpg" alt="León"> <!-- // ahora sirve localmente: images/lion_male_6y.jpg -->
+        <h3>León</h3>
+        <p>Panthera leo — Carnívoro. Población: en gestión de conservación.</p>
+      </article>
+      <article class="animal-card">
+  <img src="images/elephant_african_2.jpg" alt="Elefante">
+        <h3>Elefante Africano</h3>
+        <p>Loxodonta africana — Herbívoro. Notable por su memoria y estructura social.</p>
+      </article>
+      <article class="animal-card">
+  <img src="images/tiger_2.jpg" alt="Tigre"> <!-- // ahora sirve localmente: images/tiger_2.jpg -->
+        <h3>Tigre</h3>
+        <p>Panthera tigris — Solitario, grande felino en programas de reintroducción.</p>
+      </article>
+      <article class="animal-card">
+  <img src="images/giraffe_closeup.jpg" alt="Jirafa"> <!-- // ahora sirve localmente: images/giraffe_closeup.jpg -->
+        <h3>Jirafa</h3>
+        <p>Giraffa camelopardalis — Herbívoro, adaptada a sabanas y bosques.</p>
+      </article>
+      <article class="animal-card">
+  <img src="images/plains_zebra.jpg" alt="Cebra"> <!-- // ahora sirve localmente: images/plains_zebra.jpg -->
+        <h3>Cebra</h3>
+        <p>Equus quagga — Patrón único en cada individuo.</p>
+      </article>
+      <article class="animal-card">
+    <img src="images/bear_sig9.jpg" alt="Oso"> <!-- // ahora local: images/bear_sig9.jpg -->
+        <h3>Oso</h3>
+        <p>Diversas especies gestionadas con protocolos de bienestar.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4) Aves del Mundo -->
+  <section id="birds" class="section birds container">
+    <h2>Aves del Mundo</h2>
+    <p>Selección de aves que viven en el parque y que forman parte de nuestros programas de educación.</p>
+    <div class="grid birds-grid">
+      <figure>
+  <img src="images/parrot_sig10.jpg" alt="Loro"> <!-- // ahora local: images/parrot_sig10.jpg -->
+        <figcaption>Loro — Psitácidos</figcaption>
+      </figure>
+      <figure>
+  <img src="images/eagle_sig11.jpg" alt="Águila"> <!-- // ahora local: images/eagle_sig11.jpg -->
+        <figcaption>Águila — Rapaz</figcaption>
+      </figure>
+      <figure>
+  <img src="images/flamingo_sig12.jpg" alt="Flamenco"> <!-- // ahora local: images/flamingo_sig12.jpg -->
+        <figcaption>Flamenco — Aves migratorias</figcaption>
+      </figure>
+      <figure>
+  <img src="images/owl_sig13.jpg" alt="Búho"> <!-- // ahora local: images/owl_sig13.jpg -->
+        <figcaption>Búho — Nocturna</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5) Reptiles y Anfibios (galería simple) -->
+  <section id="reptiles" class="section reptiles container">
+    <h2>Reptiles y Anfibios</h2>
+    <p>Galería simple: cuidado especializado y zonas climatizadas.</p>
+    <div class="reptile-row">
+  <img src="images/snake_sig14.jpg" alt="Serpiente"> <!-- local -->
+  <img src="images/crocodile_sig15.jpg" alt="Cocodrilo"> <!-- local -->
+  <img src="images/frog_sig16.jpg" alt="Rana"> <!-- local -->
+    </div>
+  </section>
+
+  <!-- 6) Hábitats y Ecosistemas -->
+  <section id="habitats" class="section habitats container">
+    <h2>Hábitats y Ecosistemas</h2>
+    <p>Nuestros hábitats recrean zonas naturales: sabana, selva, humedales y zonas costeras.</p>
+    <div class="habitat-grid">
+      <div class="habitat">
+  <img src="images/savanna_sig17.jpg" alt="Sabana"> <!-- local -->
+        <h4>Sabana</h4>
+        <p>Diseñada para especies que requieren amplios espacios abiertos.</p>
+      </div>
+      <div class="habitat">
+  <img src="images/rainforest_sig18.jpg" alt="Selva"> <!-- local -->
+        <h4>Selva</h4>
+        <p>Zonas húmedas y vegetación densa para aves y primates.</p>
+      </div>
+      <div class="habitat">
+  <img src="images/wetland_sig19.jpg" alt="Humedal"> <!-- local -->
+        <h4>Humedales</h4>
+        <p>Áreas protegidas para aves acuáticas y anfibios.</p>
+      </div>
+      <div class="habitat">
+  <img src="images/coast_sig20.jpg" alt="Costas"> <!-- local -->
+        <h4>Zonas costeras</h4>
+        <p>Simulamos entornos marinos para educación y rescate de fauna.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) Galería Multimedia (lightbox CSS usando :target) -->
+  <section id="gallery" class="section gallery container">
+    <h2>Galería Multimedia</h2>
+    <p>Haz clic en una imagen para ampliar (lightbox CSS-only).</p>
+    <div class="gallery-grid">
+      <!-- 12 imágenes en la galería; sumadas a las usadas antes total >=30 imágenes -->
+  <a href="#img1"><img src="images/lion_male_6y.jpg" alt="Galería 1"> </a>
+  <a href="#img2"><img src="images/elephant_african_2.jpg" alt="Galería 2"> </a>
+  <a href="#img3"><img src="images/tiger_2.jpg" alt="Galería 3"> </a>
+  <a href="#img4"><img src="images/three_giraffes_01.jpg" alt="Galería 4"> </a>
+  <a href="#img5"><img src="images/plains_zebra.jpg" alt="Galería 5"> </a>
+  <a href="#img6"><img src="images/parrot_26.jpg" alt="Galería 6"></a>
+  <a href="#img7"><img src="images/eagle_27.jpg" alt="Galería 7"></a>
+  <a href="#img8"><img src="images/flamingo_28.jpg" alt="Galería 8"></a>
+  <a href="#img9"><img src="images/crocodile_29.jpg" alt="Galería 9"></a>
+  <a href="#img10"><img src="images/penguin_30.jpg" alt="Galería 10"></a>
+  <a href="#img11"><img src="images/otter_31.jpg" alt="Galería 11"></a>
+  <a href="#img12"><img src="images/rhino_32.jpg" alt="Galería 12"></a>
+    </div>
+
+    <!-- Lightbox targets (CSS-only) -->
+    <div id="img1" class="lightbox">
+  <a class="close" href="#gallery">×</a>
+  <img src="images/lion_male_6y.jpg" alt="Galería ampliada 1"> <!-- local -->
+    </div>
+  <div id="img2" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/elephant_african_2.jpg" alt="2"></div>
+  <div id="img3" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/tiger_2.jpg" alt="3"></div>
+  <div id="img4" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/three_giraffes_01.jpg" alt="4"></div>
+  <div id="img5" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/plains_zebra.jpg" alt="5"></div>
+  <div id="img6" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/parrot_26_large.jpg" alt="6"></div>
+  <div id="img7" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/eagle_27_large.jpg" alt="7"></div>
+  <div id="img8" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/flamingo_28_large.jpg" alt="8"></div>
+  <div id="img9" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/crocodile_29_large.jpg" alt="9"></div>
+  <div id="img10" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/penguin_30_large.jpg" alt="10"></div>
+  <div id="img11" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/otter_31_large.jpg" alt="11"></div>
+  <div id="img12" class="lightbox"><a class="close" href="#gallery">×</a><img src="images/rhino_32_large.jpg" alt="12"></div>
+  </section>
+
+  <!-- 8) Educación y Conservación (texto + video) -->
+  <section id="education" class="section education container">
+    <h2>Educación y Conservación</h2>
+    <p>Programas escolares, talleres y recursos para investigadores.</p>
+    <!-- Video embebido: reemplazar VIDEO_ID por un documental real si se desea -->
+    <div class="video-wrap">
+      <!-- Video educativo: reemplazado por enlace proporcionado -->
+      <iframe src="https://www.youtube.com/embed/KM_38xOP_yI?si=_y4JLGINYm1aIAvL" title="Video educativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- // reemplazar por otro video si se desea -->
+    </div>
+  </section>
+
+  <!-- 9) Eventos / Recorridos Virtuales (video + imágenes) -->
+  <section id="events" class="section events container">
+    <h2>Eventos y Recorridos Virtuales</h2>
+    <p>Sesiones en vivo, talleres y tours virtuales guiados por cuidadores.</p>
+    <div class="events-grid">
+      <div class="event-video">
+        <!-- Video de recorrido virtual: reemplazado por enlace proporcionado -->
+        <iframe src="https://www.youtube.com/embed/CYP-ViRIUr8?si=9uRSQF8AeoRhVnw_" title="Recorrido virtual" frameborder="0" allowfullscreen></iframe>
+        <!-- // reemplazar por otro recorrido virtual si se desea -->
+      </div>
+      <div class="event-photos">
+  <img src="images/keeper_sig33.jpg" alt="Cuidador"> <!-- local -->
+  <img src="images/tour_sig34.jpg" alt="Recorrido"> <!-- local -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 10) Contacto (formulario frontend) -->
+  <section id="contact" class="section contact container">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o quieres reservar un tour? Escríbenos.</p>
+
+    <form class="contact-form" action="#" method="post">
+      <!-- // editable: conectar action a backend cuando esté disponible -->
+      <div class="form-grid">
+        <label>Nombre
+          <input type="text" name="name" required placeholder="Tu nombre">
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="tu@ejemplo.com">
+        </label>
+        <label>Asunto
+          <input type="text" name="subject" placeholder="Reserva, pregunta, prensa...">
+        </label>
+        <label>Teléfono
+          <input type="tel" name="phone" placeholder="Opcional">
+        </label>
+      </div>
+      <label>Mensaje
+        <textarea name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Enviar mensaje</button>
+        <button type="reset" class="btn alt">Limpiar</button>
+      </div>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Dirección:</strong> Avenida Naturaleza 123, Ciudad Verde.</p>
+      <p><strong>Tel:</strong> +34 900 123 456</p>
+      <p><strong>Email:</strong> info@parquevidasalvaje.example</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2025</span> Parque Vida Salvaje — Todos los derechos reservados.</p>
+      <nav>
+        <a href="#about">Misión</a>
+        <a href="#education">Educación</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- small inline script to set year (optional, can be removed) -->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- // FIN del HTML. Comentarios clave: 
+       // editable: cambiar textos, imágenes y videos según necesidades.
+       // reemplazar imagen: buscar en Unsplash o Pexels y sustituir src.
+  -->
+</body>
+</html>

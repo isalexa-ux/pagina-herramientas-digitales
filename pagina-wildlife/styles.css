@@ -1,0 +1,155 @@
+/* styles.css - Tema: Parque de Vida Salvaje (Zoológico contemporáneo) */
+/* // editable: colores, tipografías y tamaños en :root */
+:root{
+  --brand:#1b6b52; /* verde bosque */
+  --accent:#f2a154; /* color cálido */
+  --muted:#6b7280;
+  --bg:#f7faf7;
+  --card:#ffffff;
+  --max-width:1200px;
+  --gap:1rem;
+}
+
+/* Reset ligero */
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+/* Header */
+.site-header{background:linear-gradient(180deg,var(--brand), #14503d);color:#fff;position:sticky;top:0;z-index:10}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.75rem}
+.logo{font-weight:700;color:#fff;text-decoration:none;font-size:1.25rem}
+
+/* Nav - CSS only (no JS) */
+.nav-toggle{display:none}
+.nav-toggle-label{display:none}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{color:#fff;text-decoration:none;padding:0.5rem 0.75rem;border-radius:6px}
+.main-nav a:hover{background:rgba(255,255,255,0.06)}
+
+/* Mobile nav styling (checkbox) */
+@media (max-width:900px){
+  .nav-toggle{display:block;position:absolute;left:-9999px}
+  .nav-toggle-label{display:block;width:36px;height:36px;cursor:pointer}
+  .nav-toggle-label span, .nav-toggle-label span:before, .nav-toggle-label span:after{display:block;background:#fff;height:3px;border-radius:2px;position:relative}
+  .nav-toggle-label span:before{content:'';position:absolute;left:0;top:-9px;width:100%}
+  .nav-toggle-label span:after{content:'';position:absolute;left:0;top:9px;width:100%}
+  .main-nav{position:absolute;left:0;right:0;top:64px;background:var(--brand);max-height:0;overflow:hidden;transition:max-height .25s ease}
+  .nav-toggle:checked + .nav-toggle-label + .main-nav{max-height:480px}
+  .main-nav ul{flex-direction:column;padding:1rem}
+}
+
+/* Table of contents */
+.toc{background:var(--bg);border-bottom:1px solid #e6eee6}
+.toc a{color:var(--brand);text-decoration:none;margin-right:.5rem}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr;align-items:center}
+.hero-media img{width:100%;height:40vh;object-fit:cover;filter:contrast(.95) saturate(.95)}
+.hero-content{position:relative;padding:2rem 0;text-align:center;background:linear-gradient(transparent, rgba(0,0,0,0.05));margin-top:-6rem}
+.hero h1{color:var(--brand);font-size:2rem;margin:.25rem 0}
+.lead{color:var(--muted);margin-bottom:1rem}
+.btn{background:var(--brand);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none}
+.btn.alt{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+
+/* Sections */
+.section{padding:3rem 0}
+.section h2{margin-top:0;color:var(--brand)}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--card);border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(18,52,26,0.06)}
+.card img{width:100%;height:160px;object-fit:cover}
+.card h3{margin:0.5rem;padding:0 1rem}
+.card p{padding:0 1rem 1rem;color:var(--muted)}
+
+/* Mammals grid */
+.mammals-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.animal-card{background:var(--card);padding:0;border-radius:8px;overflow:hidden}
+.animal-card img{height:180px;object-fit:cover}
+.animal-card h3{margin:.5rem 1rem}
+.animal-card p{color:var(--muted);margin:0 1rem 1rem}
+
+/* Birds */
+.birds-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.birds-grid figure{background:var(--card);padding:0;border-radius:8px;overflow:hidden}
+.birds-grid figcaption{padding:.5rem .75rem;color:var(--muted)}
+
+/* Reptiles row */
+.reptile-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+
+/* Habitats grid */
+.habitat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.habitat{background:var(--card);border-radius:8px;overflow:hidden}
+.habitat img{height:160px;object-fit:cover}
+.habitat h4{margin:.5rem 1rem}
+
+/* Gallery grid and lightbox CSS only using :target */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem}
+.gallery-grid a{display:block;overflow:hidden;border-radius:6px}
+.gallery-grid img{transition:transform .25s ease, filter .25s ease}
+.gallery-grid img:hover{transform:scale(1.03);filter:grayscale(0)}
+
+/* Microinteracciones: botones, tarjetas y enlaces */
+.btn{transition:transform .12s ease, box-shadow .12s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(27,107,82,0.12)}
+.btn:active{transform:translateY(-1px);box-shadow:0 4px 12px rgba(27,107,82,0.08)}
+
+.card, .animal-card, .habitat, .birds-grid figure{transition:transform .18s ease, box-shadow .18s ease}
+.card:hover, .animal-card:hover, .habitat:hover, .birds-grid figure:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(12,40,28,0.08)}
+
+/* Smooth focus and keyboard microinteraction */
+a,button,input,textarea{transition:box-shadow .12s ease, transform .12s ease}
+a:hover{transform:translateY(-2px)}
+
+/* Nav link underline animation */
+.main-nav a{position:relative}
+.main-nav a:after{content:'';position:absolute;left:50%;bottom:-6px;transform:translateX(-50%) scaleX(0);height:3px;width:60%;background:var(--accent);border-radius:3px;transition:transform .18s ease}
+.main-nav a:hover:after, .main-nav a:focus:after{transform:translateX(-50%) scaleX(1)}
+
+/* Image desaturation effect that returns to color on hover */
+img{filter:grayscale(.02) contrast(0.98)}
+img:hover{filter:grayscale(0) saturate(1.02)}
+
+/* small 'pulse' animation for CTA on page load (subtle) */
+@keyframes pulse-cta{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+.hero .btn{animation:pulse-cta 6s ease-in-out infinite;animation-delay:1s}
+
+/* Accessibility: stronger focus-visible */
+:focus-visible{outline:3px solid rgba(27,107,82,0.25);outline-offset:3px}
+
+.lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;justify-content:center;align-items:center;padding:2rem}
+.lightbox:target{display:flex}
+.lightbox img{max-width:90%;max-height:90%;border-radius:6px}
+.lightbox .close{position:absolute;right:1rem;top:1rem;color:#fff;font-size:2rem;text-decoration:none}
+
+/* Video wrap */
+.video-wrap, .event-video{position:relative;padding-top:56.25%}
+.video-wrap iframe, .event-video iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+
+/* Events grid */
+.events-grid{display:grid;grid-template-columns:2fr 1fr;gap:1rem}
+.event-photos img{width:100%;height:calc(50% - .5rem);object-fit:cover;margin-bottom:1rem}
+
+/* Contact form */
+.contact-form{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(18,52,26,0.05)}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+label{display:block;color:var(--muted);font-size:.95rem}
+input,textarea{width:100%;padding:.6rem;border:1px solid #e6eee6;border-radius:6px}
+.form-actions{display:flex;gap:.5rem;margin-top:.75rem}
+
+/* Footer */
+.site-footer{background:#0f2b22;color:#fff;padding:1.25rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.site-footer a{color:#fff;text-decoration:none}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+  .hero-content{margin-top:-3rem;padding:1rem}
+  .events-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
+
+/* Accessibility tweaks */
+a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(27,107,82,0.2);outline-offset:2px}
+
+/* // editable: añade aquí reglas para branding, print, o animaciones */
